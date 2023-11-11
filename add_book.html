@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/add_book.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/add_book.js">
+    </script>
+    <title>Library Management System</title>
+  </head>
+  <body>
+    <!-- logout button -->
+
+
+    <div class=main_header>
+      <div >
+        <button class="BUTTON" id="log_button" onclick="location.href='admin_portal.html'">Back</button>
+      </div>
+
+      <div class="heading">
+          <h1 id="portal">Library System</h1>
+      </div>
+    </div>
+
+    <hr>
+
+    <h1 id="title">Add Book</h1>
+
+	<form id="book-form" action="">
+            <p>Fill the details of book</p>
+            
+            <label id="name-label" for="book_name">Book Code</label>
+            <input id="book_code" type="number" placeholder="Enter Book Code" required>
+            
+            <!-- book name -->
+            <label id="name-label" for="book_name">Book Name</label>
+			      <input id="book_name" type="text" placeholder="Enter book name" required>
+
+            <!-- authors name -->
+            <label id="name-label" for="book_name">Author Name(1)</label>
+            <input id="author1" type="text" placeholder="Enter Author name" required>
+            
+            
+            <label id="name-label" for="book_name">Author Name(2)</label>
+            <input id="author2" type="text" placeholder="Enter Author name" >
+            
+            <label id="name-label" for="subject">Subject</label>
+            <input id="Subject" type="text" placeholder="Enter Subject" required>
+            
+			      <label id="name-label" for="book_name">Tags</label>
+            <textarea id="tags" placeholder="Add some tags which will help you during searching.tags may be name of the book, author, subject etc."></textarea>
+
+            <div class="upload-btn-wrapper">
+                    <button class="btn">Upload a Ebook</button>
+                    <input type="file" name="myfile" />
+            </div>
+
+			<button id="submit">Finish</button>
+    
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+    
+  </body>
+</html>

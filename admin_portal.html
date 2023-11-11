@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/admin_portal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/admin_portal.js">
+    </script>
+    <title>Library Management System</title>
+  </head>
+  <body>
+    <!-- Changed heading div - code changed -->
+    <div class=main_header>
+      
+      <div class="heading">
+              <button   id="log_button">LogOut</button>
+              <h1 id="portal">Online Library (Admin) Portal</h1>
+              <hr>
+      </div>
+
+    </div>
+
+    
+    <!-- admin login -->
+
+
+    <!-- search -->
+
+    <form class="Search" id="Students_search">
+      <input type="text" id="search-bar" placeholder="Search Students">
+      <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+      <button class="show" id="show_students">Show all Students</button>
+    </form>
+
+    <form class="Search" id="Books_search">
+      <input type="text" id="search-bar" placeholder="Search Books">
+      <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+      <button class="show" id="show_books">Show all Books</button>
+    </form>
+
+
+    <div>
+      <!-- Changing Results styles - Code changed -->
+      <div class="main_user_block" id="Result">  
+        <ul id="users"> <p style="font-size: 20px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">The Results for Students -</p> 
+        </ul>
+        <ul id="books">
+        </ul>
+      </div>  
+      <div>
+          <button class="BUTTON" id="add_book_button" onclick="location.href='add_book.html'">Add Books</button>
+      </div>
+
+      <div>
+          <button class="BUTTON" id="buy_book" onclick="location.href='buy_book.html'">Buy Books</button>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+  </body>
+</html>
