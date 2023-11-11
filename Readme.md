@@ -19,18 +19,5 @@
 
 4. for user account register a new user
 ---
+Made usability testing on the Library management system developed by Rajendra Prajapat
 
-# direct link 
-
-https://rajpra786.github.io/Library-Management-System/index.html
-
----
-# Contributors
-- ##### Rajendra Prajapat
-- ##### Dheeraj Chaudhary
-- ##### Priya Tiru
-- ##### Rajdeep Das
-- ##### Shashank N S
-
-##### Supervised By- Prof. Channappa B AKKI
-###### Academic Year: 2018-2019
